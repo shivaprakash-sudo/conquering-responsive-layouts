@@ -17,6 +17,10 @@ html {
     font-size: 14px;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 img {
     max-width: 100%;
 }
@@ -31,6 +35,18 @@ button {
     font-family: 'Oswald', sans-serif;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h5 {
+    font-size: 1.17rem;
+}
+
 ul {
     list-style: none;
 }
@@ -39,10 +55,19 @@ p {
     margin: 0.75rem 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 section,
 .header,
 .footer {
-    padding: 0 5%;
+    padding: 1% 5%;
 }
 
 .container {
@@ -62,7 +87,7 @@ section,
 }
 
 .heading-theme {
-    color: #a59678;
+    color: var(--theme-color);
 }
 
 .d-flex {
@@ -77,14 +102,33 @@ li {
     color: var(--grey);
 }
 
+.btn {
+    cursor: pointer;
+    color: var(--white);
+    text-transform: uppercase;
+    opacity: 0.9;
+    border: none;
+    border-radius: 100px;
+    background: var(--theme-color);
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.signup-btn:hover,
+.hero-text-btn:hover {
+    opacity: 1;
+}
+
 
 /* header */
 
 .header {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-family: 'Oswald', sans-serif;
     background: #2e323f;
-    color: #fff;
+    color: var(--white);
     justify-content: space-between;
     align-items: center;
 }
@@ -105,20 +149,25 @@ li {
     -o-border-radius: 8px;
 }
 
-.nav {
+.nav,
+.nav-list {
     display: none;
 }
 
 .nav-list {
-    display: none;
     text-transform: uppercase;
+}
+
+.signup-btn {
+    font-size: inherit;
+    padding: 0.25em 1em;
 }
 
 
 /* hero section */
 
 .hero {
-    color: #fff;
+    color: var(--white);
     background: var(--dark-background);
 }
 
@@ -127,23 +176,13 @@ li {
     line-height: 1.25;
 }
 
-.hero-text-p {
-    font-size: 1.125rem;
+.hero-text-p,
+.hero-text-btn {
+    font-size: 1.5rem;
 }
 
 .hero-text-btn {
-    cursor: pointer;
-    color: var(--white);
-    font-size: 1.5rem;
-    padding: 0.5em 1.5em;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 100px;
-    background: var(--theme-color);
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -ms-border-radius: 100px;
-    -o-border-radius: 100px;
+    padding: 0.25em 1.5em;
 }
 
 
@@ -156,10 +195,14 @@ li {
 
 /* content */
 
+.article p {
+    font-size: 1.17rem;
+}
+
 .side {
     background: var(--dark-background);
     color: var(--white);
-    padding: 1em;
+    padding: 1.5em;
 }
 
 .side:nth-child(2) {
@@ -174,18 +217,38 @@ li {
     color: var(--white);
 }
 
-@media (min-width:700px) and (max-width:1000px) {
+.footer-heading {
+    margin-bottom: 1em;
+}
+
+.footer-links {
+    margin-top: 2em;
+}
+
+.footer-nav-list-item {
+    margin-top: 0.5em;
+}
+
+
+/* for medium size displays */
+
+@media (min-width:700px) {
     html {
         font-size: 16px;
     }
     .container {
         max-width: 920px;
+        padding: 4em 0;
+    }
+    .header .container {
+        padding: unset;
     }
     .hero-content {
         display: flex;
         justify-content: space-between;
     }
     .hero-heading {
+        font-size: 4.5rem;
         width: 45%;
     }
     .hero-text {
@@ -216,5 +279,55 @@ li {
     .footer-links {
         display: flex;
         justify-content: space-around;
+    }
+}
+
+
+/* for large size displays */
+
+@media (min-width:1000px) {
+    html {
+        font-size: 18px;
+    }
+    .container {
+        max-width: 1200px;
+    }
+    .btn-menu-container {
+        display: none;
+    }
+    .nav,
+    .nav-list {
+        display: inline;
+    }
+    .nav-list+.nav-list {
+        margin-left: 2rem;
+    }
+    .nav-list--item {
+        display: inline;
+    }
+    .nav-list--item {
+        margin-left: 0.5rem;
+    }
+    .hero-heading {
+        font-size: 5rem;
+    }
+    .content>.container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .content-aside {
+        flex-direction: column;
+    }
+    .content-article {
+        width: 60%;
+    }
+    .content-aside {
+        width: 30%;
+    }
+    .side {
+        max-width: 100%;
+    }
+    .side+.side {
+        margin: 1em 0;
     }
 }
