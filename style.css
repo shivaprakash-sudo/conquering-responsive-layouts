@@ -156,8 +156,8 @@ li {
 } */
 
 .nav-list {
-    /* display: none;
-    position: absolute; */
+    display: none;
+    /* position: absolute; */
     text-transform: uppercase;
 }
 
@@ -206,6 +206,10 @@ li {
 
 
 /* content */
+
+.content {
+    background: var(--white);
+}
 
 .article p {
     font-size: 1.17rem;
@@ -340,5 +344,19 @@ li {
     }
     .side+.side {
         margin: 1em 0;
+    }
+    .footer-content {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-content h5 {
+        margin-top: 0;
+    }
+    .footer-text {
+        width: 35%;
+    }
+    .footer-links {
+        width: 60%;
     }
 }
