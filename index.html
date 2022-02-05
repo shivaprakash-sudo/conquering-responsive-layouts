@@ -6,107 +6,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Layout</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="container">
-        <a href="index.html"><img class="logo" src="" alt="Logo"></a>
-        <nav>
-            <ul class="nav-list">
-                <li class="nav-list--item">Home</li>
-                <li class="nav-list--item">About</li>
-                <li class="nav-list--item">Contact</li>
-            </ul>
-            <ul class="nav-list">
-                <li class="nav-list--item">Sign In</li>
-                <li class="nav-list--item">Sign Up</li>
-            </ul>
-        </nav>
+    <header class="header txt-center">
+        <div class="container d-flex">
+            <a href="index.html" class="logo-link"><img class="logo" src="/resources/images/logo.svg" alt="Logo"></a>
+            <div class="btn-menu-container"><button class="btn-menu">
+                <svg class="btn-menu-svg" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M97.092 36.078H30.908a2.111 2.111 0 0 0 0 4.222h66.184a2.111 2.111 0 0 0 0-4.222zM97.092 61.889H30.908a2.111 2.111 0 0 0 0 4.222h66.184a2.111 2.111 0 0 0 0-4.222zM97.092 87.7H30.908a2.111 2.111 0 0 0 0 4.222h66.184a2.111 2.111 0 0 0 0-4.222z"/></svg>
+            </button></div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-list--item">Home</li>
+                    <li class="nav-list--item">About</li>
+                    <li class="nav-list--item">Contact</li>
+                </ul>
+                <ul class="nav-list">
+                    <li class="nav-list--item">Sign In</li>
+                    <li class="nav-list--item">Sign Up</li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="main">
-        <section class="hero container">
-            <h1 class="hero-heading">Responsive Layouts don't have to be a struggle</h1>
-            <div class="hero-text">
-                <p class="hero-text-p">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum architecto vel, voluptas ad nobis cum itaque fugiat voluptatem atque consectetur minima impedit consequatur, voluptate temporibus commodi similique officiis eligendi aspernatur.
-                </p>
-                <button class="hero-text-btn">I want to learn</button>
+        <section class="hero">
+            <div class="container txt-center">
+                <h1 class="hero-heading">Responsive Layouts <span class="heading-theme">don't have to be a struggle</span></h1>
+                <div class="hero-text">
+                    <p class="hero-text-p">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum architecto vel, voluptas ad nobis cum itaque fugiat voluptatem atque consectetur minima impedit consequatur, voluptate temporibus commodi similique officiis eligendi aspernatur.
+                    </p>
+                    <button class="hero-text-btn">I want to learn</button>
+                </div>
             </div>
         </section>
-        <section class="features container">
-            <div class="feature">
-                <h3>Mobile-first</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, vel eum impedit vitae quam odio est deserunt. Voluptates qui temporibus accusantium molestiae repellat numquam veniam. Quam modi ut eligendi voluptatem.</p>
-            </div>
-            <div class="feature">
-                <h3>Mobile-first</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, vel eum impedit vitae quam odio est deserunt. Voluptates qui temporibus accusantium molestiae repellat numquam veniam. Quam modi ut eligendi voluptatem.</p>
-            </div>
-            <div class="feature">
-                <h3>Mobile-first</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, vel eum impedit vitae quam odio est deserunt. Voluptates qui temporibus accusantium molestiae repellat numquam veniam. Quam modi ut eligendi voluptatem.</p>
+        <section class="features txt-center">
+            <div class="container">
+                <div class="feature">
+                    <h3 class="heading-theme">Mobile-first</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, vel eum impedit vitae quam odio est deserunt. Voluptates qui temporibus accusantium molestiae repellat numquam veniam. Quam modi ut eligendi voluptatem.</p>
+                </div>
+                <div class="feature">
+                    <h3 class="heading-theme">Efficient</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, vel eum impedit vitae quam odio est deserunt. Voluptates qui temporibus accusantium molestiae repellat numquam veniam. Quam modi ut eligendi voluptatem.</p>
+                </div>
+                <div class="feature">
+                    <h3 class="heading-theme">Done right</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, vel eum impedit vitae quam odio est deserunt. Voluptates qui temporibus accusantium molestiae repellat numquam veniam. Quam modi ut eligendi voluptatem.</p>
+                </div>
             </div>
         </section>
-        <section class="content container">
-            <article>
-                <h3>It doesn't have to be so hard</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, veniam non minus asperiores eos repudiandae, aliquam, dignissimos quaerat omnis voluptatum quod repellendus fugit aut eveniet perspiciatis mollitia iusto fuga corporis?</p>
-                <img src="/resources/the-image.jpg" alt="Hand-drawn wireframes of web pages">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit distinctio sint ipsum, tempore porro cum, consequatur perspiciatis, saepe deserunt consectetur hic blanditiis similique dolores officiis ullam placeat libero labore
-                    nulla!
-                </p>
-            </article>
-            <aside>
-                <div class="side">
-                    <h3>Break it down</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quasi officiis tempore? Iusto necessitatibus voluptates minima dolore neque ipsam beatae nisi maxime, expedita eaque assumenda, officia cum autem. Magnam, quasi.</p>
-                </div>
-                <div class="side">
-                    <h3>Break it down</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quasi officiis tempore? Iusto necessitatibus voluptates minima dolore neque ipsam beatae nisi maxime, expedita eaque assumenda, officia cum autem. Magnam, quasi.</p>
-                </div>
-                <div class="side">
-                    <h3>Break it down</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quasi officiis tempore? Iusto necessitatibus voluptates minima dolore neque ipsam beatae nisi maxime, expedita eaque assumenda, officia cum autem. Magnam, quasi.</p>
-                </div>
-            </aside>
+        <section class="content">
+            <div class="container">
+                <article>
+                    <h3 class="heading-theme">It doesn't have to be so hard</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, veniam non minus asperiores eos repudiandae, aliquam, dignissimos quaerat omnis voluptatum quod repellendus fugit aut eveniet perspiciatis mollitia iusto fuga corporis?</p>
+                    <img src="/resources/images/the-image.jpg" alt="Hand-drawn wireframes of web pages">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit distinctio sint ipsum, tempore porro cum, consequatur perspiciatis, saepe deserunt consectetur hic blanditiis similique dolores officiis ullam placeat libero labore
+                        nulla!
+                    </p>
+                </article>
+                <aside class="txt-center">
+                    <div class="side">
+                        <h3>Break it down</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quasi officiis tempore? Iusto necessitatibus voluptates minima dolore neque ipsam beatae nisi maxime, expedita eaque assumenda, officia cum autem. Magnam, quasi.</p>
+                    </div>
+                    <div class="side">
+                        <h3>Work your way up</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quasi officiis tempore? Iusto necessitatibus voluptates minima dolore neque ipsam beatae nisi maxime, expedita eaque assumenda, officia cum autem. Magnam, quasi.</p>
+                    </div>
+                    <div class="side">
+                        <h3>Don't give up</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quasi officiis tempore? Iusto necessitatibus voluptates minima dolore neque ipsam beatae nisi maxime, expedita eaque assumenda, officia cum autem. Magnam, quasi.</p>
+                    </div>
+                </aside>
+            </div>
         </section>
     </main>
 
-    <footer class="footer container">
-        <h2 class="footer-heading">just scratching the surface</h2>
-        <div class="footer-content">
-            <div class="footer-text">
-                <h5>About our company</h5>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error a nam quae aspernatur veritatis? Ut, unde illo sed rerum quasi ad in nostrum autem, quis error, quo aspernatur? At, recusandae.</p>
-            </div>
-            <div class="footer-links">
-                <div>
-                    <h5>Getting around</h5>
-                    <ul class="footer-nav-list">
-                        <li class="footer-nav-list-item">Home</li>
-                        <li class="footer-nav-list-item">About</li>
-                        <li class="footer-nav-list-item">Contact</li>
-                    </ul>
+    <footer class="footer">
+        <div class="container txt-center">
+            <h2 class="footer-heading">just scratching the surface</h2>
+            <div class="footer-content">
+                <div class="footer-text">
+                    <h5 class="heading-theme">About our company</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error a nam quae aspernatur veritatis? Ut, unde illo sed rerum quasi ad in nostrum autem, quis error, quo aspernatur? At, recusandae.</p>
                 </div>
-                <div>
-                    <h5>Other things</h5>
-                    <ul class="footer-nav-list">
-                        <li class="footer-nav-list-item">Lorem</li>
-                        <li class="footer-nav-list-item">Ipsum</li>
-                        <li class="footer-nav-list-item">Dolor</li>
-                        <li class="footer-nav-list-item">Sit amet</li>
-                    </ul>
-                </div>
-                <div>
-                    <h5>And much more</h5>
-                    <ul class="footer-nav-list">
-                        <li class="footer-nav-list-item">Lorem</li>
-                        <li class="footer-nav-list-item">Ipsum</li>
-                        <li class="footer-nav-list-item">Dolor</li>
-                        <li class="footer-nav-list-item">Sit amet</li>
-                    </ul>
+                <div class="footer-links">
+                    <div>
+                        <h5 class="heading-theme">Getting around</h5>
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-list-item">Home</li>
+                            <li class="footer-nav-list-item">About</li>
+                            <li class="footer-nav-list-item">Contact</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="heading-theme">Other things</h5>
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-list-item">Lorem</li>
+                            <li class="footer-nav-list-item">Ipsum</li>
+                            <li class="footer-nav-list-item">Dolor</li>
+                            <li class="footer-nav-list-item">Sit amet</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="heading-theme">And much more</h5>
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-list-item">Lorem</li>
+                            <li class="footer-nav-list-item">Ipsum</li>
+                            <li class="footer-nav-list-item">Dolor</li>
+                            <li class="footer-nav-list-item">Sit amet</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
