@@ -7,3 +7,5 @@ This challenge was given by Kevin Powell in his course with the same name, which
 This challenge focuses on creating a responsive layout, with mobile first approach, which could be very useful when creating real world web applications.
 
 The tools used are HTML5, CSS3 and maybe some JavaScript.
+
+Link to the web page: [Responsive Layouts](https://shivaprakash-sudo.github.io/conquering-responsive-layouts/)
