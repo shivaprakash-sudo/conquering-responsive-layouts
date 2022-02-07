@@ -133,6 +133,16 @@ li {
     align-items: center;
 }
 
+.logo {
+    font-size: 2.7rem;
+    font-family: "Josefin Sans", sans-serif;
+    align-self: flex-start;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
 .btn-menu {
     cursor: pointer;
     width: 50px;
@@ -149,15 +159,15 @@ li {
     -o-border-radius: 8px;
 }
 
+.navs {
+    display: none;
+}
 
-/* .nav {
-    position: relative;
-    display: inline-block;
-} */
+.active {
+    display: block;
+}
 
 .nav-list {
-    display: none;
-    /* position: absolute; */
     text-transform: uppercase;
 }
 
@@ -187,12 +197,12 @@ li {
     line-height: 1.25;
 }
 
-.hero-text-p,
-.hero-text-btn {
-    font-size: 1.5rem;
+.hero-text-p {
+    font-size: 1.3rem;
 }
 
 .hero-text-btn {
+    font-size: 1.7em;
     margin: 1em 0;
     padding: 0.25em 1.5em;
 }
@@ -307,6 +317,14 @@ li {
     }
     .container {
         max-width: 1200px;
+    }
+    .nav,
+    .navs {
+        display: flex;
+        align-items: center;
+    }
+    .navs {
+        display: block;
     }
     .btn-menu-container {
         display: none;
