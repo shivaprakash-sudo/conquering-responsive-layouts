@@ -269,6 +269,9 @@ li {
     .header .container {
         padding: unset;
     }
+    .signup-btn {
+        margin-bottom: 1em;
+    }
     .hero-content {
         display: flex;
         justify-content: space-between;
@@ -340,6 +343,9 @@ li {
     }
     .nav-list--item {
         margin-left: 0.5rem;
+    }
+    .signup-btn {
+        margin-bottom: 0;
     }
     .hero-heading {
         font-size: 5rem;
